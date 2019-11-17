@@ -12,7 +12,13 @@ const channelForm = props => {
 
   return (
     <form onSubmit={onSubmit}>
-      <input type='text' ref={channelInput} />
+      <div className='form-group'></div>
+      <input
+        className='form-control'
+        placeholder='Add channel'
+        type='text'
+        ref={channelInput}
+      />
     </form>
   );
 };

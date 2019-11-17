@@ -23,12 +23,15 @@ class Main extends Component {
 
   render() {
     return (
-      <main>
-        <ChannelSection
-          channels={this.state.channels}
-          addChannel={this.addChannel}
-          setChannel={this.setChannel}
-        />
+      <main className='app'>
+        <nav className='nav'>
+          <ChannelSection
+            channels={this.state.channels}
+            addChannel={this.addChannel}
+            setChannel={this.setChannel}
+            activeChannel={this.state.activeChannel}
+          />
+        </nav>
       </main>
     );
   }

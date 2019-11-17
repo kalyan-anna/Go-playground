@@ -7,6 +7,7 @@ const channelList = props => {
     <Channel
       channel={channel}
       setChannel={() => props.setChannel(channel)}
+      activeChannel={props.activeChannel}
       key={channel.id}
     />
   ));
@@ -15,7 +16,8 @@ const channelList = props => {
 
 channelList.propTypes = {
   channels: PropTypes.array.isRequired,
-  setChannel: PropTypes.func.isRequired
+  setChannel: PropTypes.func.isRequired,
+  activeChannel: PropTypes.object
 };
 
 export default channelList;
