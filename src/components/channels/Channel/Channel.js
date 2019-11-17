@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './Channel.css';
 
 const channel = props => {
   return (
-    <li>
+    <li className='Channel'>
       <button onClick={props.setChannel}>{props.channel.name}</button>
     </li>
   );

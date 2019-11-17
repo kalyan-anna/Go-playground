@@ -1,4 +1,4 @@
-.ChannelList button {
+.Channel button {
   background: none !important;
   border: none;
   padding: 0 !important;
@@ -9,6 +9,6 @@
   cursor: pointer;
 }
 
-.ChannelList button:hover {
-  text-decoration: underline;
+.Channel button:hover {
+  text-decoration: none;
 }
