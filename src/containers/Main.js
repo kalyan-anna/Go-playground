@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import ChannelSection from '../components/channels/ChannelSection/ChannelSection';
 import UserSection from '../components/users/UserSection/UserSection';
+import MessageSection from '../components/messages/MessageSection/MessageSection';
 
 class Main extends Component {
   state = {
     channels: [],
     activeChannel: null,
-    users: []
+    users: [],
+    messages: []
   };
 
   addChannel = name => {
@@ -19,7 +21,6 @@ class Main extends Component {
   };
 
   setChannel = activeChannel => {
-    console.log('ActiveChannel:', activeChannel);
     this.setState({ activeChannel });
   };
 
@@ -30,6 +31,19 @@ class Main extends Component {
       name
     });
     this.setState({ users });
+  };
+
+  addMessage = body => {
+    const { messages, users } = this.state;
+    const createdAt = new Date();
+    let author = users.length > 0 ? users[0].name : 'anonymous';
+    messages.push({
+      id: messages.length,
+      body,
+      createdAt,
+      author
+    });
+    this.setState({ messages });
   };
 
   render() {
@@ -44,6 +58,7 @@ class Main extends Component {
           />
           <UserSection {...this.state} setUserName={this.setUserName} />
         </nav>
+        <MessageSection {...this.state} addMessage={this.addMessage} />
       </main>
     );
   }

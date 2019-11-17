@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import UserList from '../UserList/UserList';
 import UserForm from '../UserForm/UserForm';
 
