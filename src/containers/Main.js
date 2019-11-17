@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ChannelSection from '../components/channels/ChannelSection';
+import ChannelSection from '../components/channels/ChannelSection/ChannelSection';
 
 class Main extends Component {
   state = {

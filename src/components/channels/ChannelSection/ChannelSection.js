@@ -1,6 +1,6 @@
 import React from 'react';
-import ChannelForm from './ChannelForm';
-import ChannelList from './ChannelList/ChannelList';
+import ChannelForm from '../ChannelForm/ChannelForm';
+import ChannelList from '../ChannelList/ChannelList';
 import PropTypes from 'prop-types';
 
 const channelSection = props => {
