@@ -4,7 +4,11 @@ import PropTypes from 'prop-types';
 
 const channelList = props => {
   const channelsEl = props.channels.map(channel => (
-    <Channel channel={channel} setChannel={props.setChannel} key={channel.id} />
+    <Channel
+      channel={channel}
+      setChannel={() => props.setChannel(channel)}
+      key={channel.id}
+    />
   ));
   return <ul>{channelsEl}</ul>;
 };

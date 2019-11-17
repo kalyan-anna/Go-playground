@@ -17,6 +17,7 @@ class Main extends Component {
   };
 
   setChannel = activeChannel => {
+    console.log('ActiveChannel:', activeChannel);
     this.setState({ activeChannel });
   };
 
