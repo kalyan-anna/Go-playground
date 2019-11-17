@@ -6,7 +6,7 @@ const channelList = props => {
   const channelsEl = props.channels.map(channel => (
     <Channel channel={channel} setChannel={props.setChannel} key={channel.id} />
   ));
-  return <ul class='ChannelList'>{channelsEl}</ul>;
+  return <ul className='ChannelList'>{channelsEl}</ul>;
 };
 
 channelList.propTypes = {
