@@ -24,3 +24,12 @@ yarn-error.log*
 
 /go/pkg/*
 /go/bin/*
+/go/gopkg.in/*
+/go/golang.org/*
+/go/github.com/cenkalti/*
+/go/github.com/golang/*
+/go/github.com/gorilla/*
+/go/github.com/hailocab/*
+/go/github.com/mitchellh/*
+/go/github.com/opentracing/*
+/go/github.com/sirupsen/*
